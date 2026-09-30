@@ -1,30 +1,31 @@
 #include <iostream>
 using namespace std;
 
-//int stringSize()
-//{	
-//	char text[255];
-//	cin.getline(text, 255);
-//	int count = 0;
-//
-//	for (int i = 0; i < 255; i++)
-//	{
-//		while (text[i] != '\0')
-//		{
-//			count++;
-//		}
-//		else
-//		if ((bool)isspace(text[i]) == true and (bool)isspace(text[i + 1]) == true)
-//			return count;
-//		else if ((bool)isalpha(text[i]) == true)
-//			count++;
-//		else if ((bool)isdigit(text[i]) == true)
-//			count++;
-//		else if ((bool)isspace(text[i]) == true)
-//			count++;
-//	}
-//	return count;
-//}
+int stringSize()
+{	
+	cin.ignore();
+	char text[255];
+	cin.getline(text, 255);
+	int count = 0;
+	int i = 0;
+	
+		while (true)
+		{
+			if (text[i] != '\0')
+			{
+			count++;
+
+			}
+			if (text[i] == '\0')
+			{
+				break;
+
+			}
+			i++;
+		}
+		return count;
+	
+}
 
 int main()
 {
